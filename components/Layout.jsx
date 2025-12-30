@@ -6,21 +6,10 @@ export default function Layout({ children }) {
 
   return (
     <div className="wrap">
-      <header className="topbar">
-        <div className="brand">Town Wall</div>
-
-        <nav className="nav" aria-label="Main">
-          <Link href="/" className={`navlink ${pathname === "/" ? "active" : ""}`}>
-            <span className="label">Town Wall</span>
-          </Link>
-        </nav>
-      </header>
-
-      <div className="topbar-spacer" aria-hidden />
 
       <main>{children}</main>
 
-      <footer className="footer">© {new Date().getFullYear()} an andysocial game</footer>
+      <footer className="footer">© {new Date().getFullYear()} andysocial apps</footer>
 
       <style jsx>{`
         /* ======================
