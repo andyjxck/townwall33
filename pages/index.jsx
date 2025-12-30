@@ -1,12 +1,10 @@
 // pages/townwall.jsx
 import React, { useState } from "react";
-import Layout from "../components/Layout";
 
 export default function TownWall() {
   const [openModal, setOpenModal] = useState(null);
 
   return (
-    <Layout>
       {/* ================= HERO ================= */}
       <section className="hero">
         <img
@@ -399,6 +397,5 @@ export default function TownWall() {
           opacity: 0.8;
         }
       `}</style>
-    </Layout>
   );
 }
