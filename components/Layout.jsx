@@ -7,27 +7,11 @@ export default function Layout({ children }) {
   return (
     <div className="wrap">
       <header className="topbar">
-        <div className="brand">The Andysocial Zone</div>
+        <div className="brand">Town Wall</div>
 
         <nav className="nav" aria-label="Main">
           <Link href="/" className={`navlink ${pathname === "/" ? "active" : ""}`}>
-            <span className="icon">🪷</span>
-            <span className="label">Zen Void</span>
-          </Link>
-
-          <Link href="/policies" className={`navlink ${pathname === "/policies" ? "active" : ""}`}>
-            <span className="icon">📜</span>
-            <span className="label">Policies</span>
-          </Link>
-
-          <Link href="/contact" className={`navlink ${pathname === "/contact" ? "active" : ""}`}>
-            <span className="icon">💬</span>
-            <span className="label">Contact</span>
-          </Link>
-
-          <Link href="/blog" className={`navlink ${pathname === "/blog" ? "active" : ""}`}>
-            <span className="icon">📝</span>
-            <span className="label">Blog</span>
+            <span className="label">Town Wall</span>
           </Link>
         </nav>
       </header>
