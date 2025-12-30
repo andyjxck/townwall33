@@ -109,28 +109,7 @@ export default function TownWall() {
         </p>
       </section>
 
-      {/* ================= SCREENSHOTS ROW 1 ================= */}
-      <section className="card">
-        <h2>What It Looks Like</h2>
-
-        <div className="screenshots">
-          <div className="shot">
-            <div className="placeholder">Town Feed Screenshot</div>
-            <p>Town and zone-based local feed</p>
-          </div>
-
-          <div className="shot">
-            <div className="placeholder">Zone View Screenshot</div>
-            <p>Neighbourhood zones and discussions</p>
-          </div>
-
-          <div className="shot">
-            <div className="placeholder">Post View Screenshot</div>
-            <p>Posts, comments, and engagement</p>
-          </div>
-        </div>
-      </section>
-
+    
       {/* ================= MODERATION ================= */}
       <section className="card">
         <h2>Moderation & Safety</h2>
@@ -147,28 +126,6 @@ export default function TownWall() {
           <li>Human moderation where context matters</li>
           <li>Appeal processes for decisions</li>
         </ul>
-      </section>
-
-      {/* ================= SCREENSHOTS ROW 2 ================= */}
-      <section className="card">
-        <h2>Profiles & Identity</h2>
-
-        <div className="screenshots">
-          <div className="shot">
-            <div className="placeholder">Profile Screenshot</div>
-            <p>User profiles and followers</p>
-          </div>
-
-          <div className="shot">
-            <div className="placeholder">Business Screenshot</div>
-            <p>Local businesses and talent listings</p>
-          </div>
-
-          <div className="shot">
-            <div className="placeholder">Global Screenshot</div>
-            <p>Global discovery and popular posts</p>
-          </div>
-        </div>
       </section>
 
       {/* ================= PHILOSOPHY ================= */}
