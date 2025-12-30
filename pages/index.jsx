@@ -156,55 +156,135 @@ export default function TownWall() {
       </section>
 
       {/* ================= MODALS ================= */}
-      {openModal && (
-        <div className="modal-backdrop" onClick={() => setOpenModal(null)}>
-          <div className="modal" onClick={(e) => e.stopPropagation()}>
-            {openModal === "guidelines" && (
-              <>
-                <h3>Community Guidelines</h3>
+    {openModal && (
+  <div className="modal-backdrop" onClick={() => setOpenModal(null)}>
+    <div className="modal" onClick={(e) => e.stopPropagation()}>
 
-                <p>
-                  Town Wall is built on respect, relevance, and local value.
-                  Harassment, hate speech, and abuse are not tolerated.
-                </p>
+      {/* ================= COMMUNITY GUIDELINES ================= */}
+      {openModal === "guidelines" && (
+        <>
+          <h3>Community Guidelines</h3>
 
-                <p>
-                  Content should contribute positively to towns, zones, or
-                  the wider community.
-                </p>
+          <p>
+            Town Wall is a place for local people, local businesses, and local
+            communities to connect in a meaningful and respectful way.
+            Everything posted here should serve a genuine local purpose.
+          </p>
 
-                <p className="footer">
-                  Let’s keep Town Wall useful, safe, and human.
-                </p>
-              </>
-            )}
+          <p>
+            We expect all users to treat others with respect. Harassment,
+            hate speech, threats, bullying, discrimination, or abuse of any
+            kind will not be tolerated.
+          </p>
 
-            {openModal === "privacy" && (
-              <>
-                <h3>Privacy Policy</h3>
+          <p>
+            Content should be relevant to towns, zones, or the wider local
+            community. Spam, misleading posts, excessive self-promotion,
+            or irrelevant content may be removed.
+          </p>
 
-                <p>
-                  Town Wall prioritises pseudonymity and minimal data collection.
-                </p>
+          <p>
+            Do not impersonate others, misrepresent businesses, or post
+            content intended to deceive or exploit users.
+          </p>
 
-                <ul>
-                  <li>No real names required</li>
-                  <li>No email or phone number required</li>
-                  <li>No precise GPS tracking</li>
-                </ul>
+          <p>
+            Illegal content, encouragement of harm, or activity that puts
+            others at risk is strictly prohibited and may result in account
+            removal.
+          </p>
 
-                <p className="footer">
-                  Last updated: December 27, 2025
-                </p>
-              </>
-            )}
+          <p>
+            Moderation decisions are made to keep Town Wall safe, useful,
+            and human. Repeated violations may lead to suspension or
+            permanent removal from the platform.
+          </p>
 
-            <button className="close" onClick={() => setOpenModal(null)}>
-              Close
-            </button>
-          </div>
-        </div>
+          <p className="footer">
+            Let’s keep Town Wall respectful, local, and built for real
+            communities.
+          </p>
+        </>
       )}
+
+      {/* ================= PRIVACY POLICY ================= */}
+      {openModal === "privacy" && (
+        <>
+          <h3>Privacy Policy</h3>
+
+          <p>
+            Town Wall prioritises privacy, pseudonymity, and minimal data
+            collection. The platform is designed so you can participate
+            without revealing unnecessary personal information.
+          </p>
+
+          <p>
+            We do not require real names. You are free to use a pseudonym
+            or handle that represents you locally.
+          </p>
+
+          <p>
+            We do not require an email address or phone number to use the
+            core features of Town Wall.
+          </p>
+
+          <p>
+            Town Wall does not track precise GPS location. Location data,
+            where used, is limited to broad town or zone-level context to
+            support local relevance.
+          </p>
+
+          <p>
+            We do not sell personal data. We do not run shadowy algorithms
+            or behavioural tracking designed to manipulate engagement.
+          </p>
+
+          <p>
+            Basic technical data may be processed to operate the service
+            securely and reliably, including moderation and abuse
+            prevention.
+          </p>
+
+          <p>
+            By using Town Wall, you acknowledge that content you post is
+            visible to other users within the app. You remain responsible
+            for what you choose to share.
+          </p>
+
+          <p className="footer">
+            Last updated: December 27, 2025
+          </p>
+
+          {/* ================= DELETE ACCOUNT ================= */}
+          <h4>Delete Account</h4>
+
+          <p>
+            You have the right to request deletion of your account and
+            associated data at any time.
+          </p>
+
+          <p>
+            To request account deletion, please contact us at:
+            <br />
+            <strong>andyblewett991@gmail.com</strong>
+          </p>
+
+          <p>
+            A self-service <strong>Delete Account</strong> button is also
+            being added directly inside the app in an upcoming update,
+            allowing you to delete your account instantly without
+            contacting support.
+          </p>
+        </>
+      )}
+
+      <button className="close" onClick={() => setOpenModal(null)}>
+        Close
+      </button>
+    </div>
+  </div>
+)}
+
 
       {/* ================= STYLES ================= */}
       <style jsx>{`
