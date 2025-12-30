@@ -7,50 +7,188 @@ export default function TownWall() {
 
   return (
     <Layout>
-      {/* HERO */}
-   <section className="hero">
-  <img
-    src="https://ucarecdn.com/d8da2fdb-f7f4-4dcd-94fe-531c7a08fd51/-/format/auto/"
-    alt="Town Wall logo"
-    className="townwall-logo"
-  />
-  <h1 className="title">Town Wall</h1>
-  <p className="subtitle">
-    A community platform built around real towns, zones, and shared spaces.
-  </p>
-</section>
+      {/* ================= HERO ================= */}
+      <section className="hero">
+        <img
+          src="https://ucarecdn.com/d8da2fdb-f7f4-4dcd-94fe-531c7a08fd51/-/format/auto/"
+          alt="Town Wall logo"
+          className="townwall-logo"
+        />
 
+        <h1 className="title">Town Wall</h1>
+        <p className="subtitle">
+          A community platform built around real towns, real zones,
+          and shared public spaces.
+        </p>
+      </section>
 
-      {/* ABOUT */}
+      {/* ================= INTRO ================= */}
       <section className="card">
         <h2>What Town Wall Is</h2>
         <p>
-          Town Wall is a community-driven platform designed to connect people
-          through their local area, while still allowing global discovery,
-          discussion, and shared spaces.
+          Town Wall is a location-first community platform. Instead of
+          algorithm-driven feeds and disappearing posts, everything on Town
+          Wall is anchored to real towns and neighbourhood zones.
         </p>
         <p>
-          It supports local towns and neighbourhood zones, global feeds,
-          popularity-based sorting, follower systems, and open discussion —
-          all moderated to keep communities usable and safe.
+          It’s designed for people who want to talk about where they live,
+          support local businesses, discover talent, and share information
+          that actually matters to their area.
+        </p>
+        <p>
+          You can stay local, explore globally, or do both — without losing
+          context or relevance.
         </p>
       </section>
 
-      {/* FEATURES */}
+      {/* ================= CORE MECHANICS ================= */}
       <section className="card">
-        <h2>How Town Wall Works</h2>
-        <ul>
-          <li>Towns and neighbourhood zones</li>
-          <li>Manual switching between towns and zones</li>
-          <li>Local feeds and a global feed</li>
-          <li>Sorting by newest or most popular</li>
-          <li>Follower counts and engagement</li>
-          <li>Global chat</li>
-          <li>Automated and human moderation</li>
+        <h2>How It Works</h2>
+
+        <ul className="feature-list">
+          <li>
+            <strong>Towns & Zones</strong>
+            <span>
+              Every post belongs to a real town, broken down into local
+              neighbourhood zones.
+            </span>
+          </li>
+
+          <li>
+            <strong>Manual Location Control</strong>
+            <span>
+              You decide where you post and what you view — no forced geo-tracking.
+            </span>
+          </li>
+
+          <li>
+            <strong>Local Feeds</strong>
+            <span>
+              See what’s happening nearby without global noise.
+            </span>
+          </li>
+
+          <li>
+            <strong>Global Feed</strong>
+            <span>
+              Explore popular discussions across all towns and regions.
+            </span>
+          </li>
+
+          <li>
+            <strong>Sorting & Discovery</strong>
+            <span>
+              Switch between newest posts or what the community values most.
+            </span>
+          </li>
+
+          <li>
+            <strong>Followers & Engagement</strong>
+            <span>
+              Follow people, businesses, or topics without algorithm tricks.
+            </span>
+          </li>
         </ul>
       </section>
 
-      {/* LEGAL BUTTONS */}
+      {/* ================= FEEDS ================= */}
+      <section className="card">
+        <h2>Feeds & Conversations</h2>
+        <p>
+          Town Wall supports multiple ways to engage:
+        </p>
+        <ul>
+          <li>Town-specific feeds</li>
+          <li>Zone-level neighbourhood feeds</li>
+          <li>A global feed for wider discovery</li>
+          <li>A global chat space</li>
+        </ul>
+        <p>
+          Content doesn’t vanish, get buried by ads, or disappear because it
+          didn’t perform in the first hour.
+        </p>
+      </section>
+
+      {/* ================= SCREENSHOTS ROW 1 ================= */}
+      <section className="card">
+        <h2>What It Looks Like</h2>
+
+        <div className="screenshots">
+          <div className="shot">
+            <div className="placeholder">Town Feed Screenshot</div>
+            <p>Town and zone-based local feed</p>
+          </div>
+
+          <div className="shot">
+            <div className="placeholder">Zone View Screenshot</div>
+            <p>Neighbourhood zones and discussions</p>
+          </div>
+
+          <div className="shot">
+            <div className="placeholder">Post View Screenshot</div>
+            <p>Posts, comments, and engagement</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= MODERATION ================= */}
+      <section className="card">
+        <h2>Moderation & Safety</h2>
+        <p>
+          Town Wall uses a mix of automated moderation tools and human review
+          to keep communities usable and safe.
+        </p>
+        <p>
+          The goal isn’t over-policing — it’s maintaining spaces where people
+          actually want to participate.
+        </p>
+        <ul>
+          <li>Automated filtering for harmful content</li>
+          <li>Human moderation where context matters</li>
+          <li>Appeal processes for decisions</li>
+        </ul>
+      </section>
+
+      {/* ================= SCREENSHOTS ROW 2 ================= */}
+      <section className="card">
+        <h2>Profiles & Identity</h2>
+
+        <div className="screenshots">
+          <div className="shot">
+            <div className="placeholder">Profile Screenshot</div>
+            <p>User profiles and followers</p>
+          </div>
+
+          <div className="shot">
+            <div className="placeholder">Business Screenshot</div>
+            <p>Local businesses and talent listings</p>
+          </div>
+
+          <div className="shot">
+            <div className="placeholder">Global Screenshot</div>
+            <p>Global discovery and popular posts</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= PHILOSOPHY ================= */}
+      <section className="card">
+        <h2>Why Town Wall Exists</h2>
+        <p>
+          Modern platforms optimise for engagement, not usefulness.
+          Town Wall exists to do the opposite.
+        </p>
+        <p>
+          It’s built for slower, more meaningful interaction — grounded in
+          real places and real communities.
+        </p>
+        <p>
+          No chasing trends. No shadowy algorithms. Just people, towns,
+          and shared spaces.
+        </p>
+      </section>
+
+      {/* ================= LEGAL ================= */}
       <section className="legal">
         <button onClick={() => setOpenModal("guidelines")}>
           Community Guidelines
@@ -60,141 +198,43 @@ export default function TownWall() {
         </button>
       </section>
 
-      {/* MODALS */}
+      {/* ================= MODALS ================= */}
       {openModal && (
         <div className="modal-backdrop" onClick={() => setOpenModal(null)}>
           <div className="modal" onClick={(e) => e.stopPropagation()}>
-            {/* COMMUNITY GUIDELINES */}
             {openModal === "guidelines" && (
               <>
                 <h3>Community Guidelines</h3>
 
-                <h4>The Rules of the Wall</h4>
                 <p>
-                  Town Wall is built on the idea that local communities are
-                  stronger when people talk to each other. It exists to
-                  celebrate local talent, support neighbourhood businesses,
-                  and keep people informed.
+                  Town Wall is built on respect, relevance, and local value.
+                  Harassment, hate speech, and abuse are not tolerated.
                 </p>
 
-                <h4>Be Neighbourly & Kind</h4>
                 <p>
-                  Treat others with the same respect you would give someone in
-                  person. There is zero tolerance for bullying, harassment,
-                  hate speech, or discrimination.
-                </p>
-
-                <h4>Quality Over Quantity</h4>
-                <p>
-                  Posts should add value. Context, useful information, and
-                  genuine discussion are encouraged. Low-effort or purely
-                  inflammatory posts may be removed.
-                </p>
-
-                <h4>Keep It Relevant</h4>
-                <p>
-                  Town Wall works best when content is relevant to towns,
-                  zones, or the wider community. Global topics are allowed,
-                  but relevance still matters.
-                </p>
-
-                <h4>Respect Privacy</h4>
-                <p>
-                  Do not post private contact details, addresses, or sensitive
-                  personal information without explicit permission.
-                </p>
-
-                <h4>Promotions & Hustles</h4>
-                <p>
-                  Local businesses and talent are welcome. Spammy, repetitive,
-                  or automated advertising will be removed.
-                </p>
-
-                <h4>No Misinformation</h4>
-                <p>
-                  Deliberately misleading or false information damages trust.
-                  Content flagged as significantly inaccurate may be removed.
-                </p>
-
-                <h4>Moderation</h4>
-                <p>
-                  Automated systems and moderators work together to keep the
-                  Wall usable. Content may be approved, held, or removed.
-                  Decisions can be appealed.
+                  Content should contribute positively to towns, zones, or
+                  the wider community.
                 </p>
 
                 <p className="footer">
-                  Together, let’s keep Town Wall useful, safe, and human.
+                  Let’s keep Town Wall useful, safe, and human.
                 </p>
               </>
             )}
 
-            {/* PRIVACY POLICY */}
             {openModal === "privacy" && (
               <>
                 <h3>Privacy Policy</h3>
 
-                <h4>1. Overview</h4>
                 <p>
-                  This policy explains how Town Wall handles information. By
-                  using the service, you agree to the terms below. The platform
-                  prioritises pseudonymity and data minimisation.
+                  Town Wall prioritises pseudonymity and minimal data collection.
                 </p>
 
-                <h4>2. Data We Do NOT Collect</h4>
                 <ul>
-                  <li>Legal names</li>
-                  <li>Email addresses</li>
-                  <li>Phone numbers</li>
-                  <li>Physical addresses</li>
-                  <li>Government IDs</li>
-                  <li>Precise GPS location data</li>
+                  <li>No real names required</li>
+                  <li>No email or phone number required</li>
+                  <li>No precise GPS tracking</li>
                 </ul>
-
-                <h4>3. Required Data</h4>
-                <p>
-                  The only required data is a username and a securely hashed
-                  password. This is used solely for authentication.
-                </p>
-
-                <h4>4. Public Content</h4>
-                <p>
-                  Posts, comments, images, and profile metadata are public by
-                  design. Anonymous posting removes public attribution but
-                  does not change how data is stored.
-                </p>
-
-                <h4>5. Third-Party Services</h4>
-                <p>
-                  Infrastructure and payments are handled by trusted providers
-                  such as Supabase, Stripe, and RevenueCat. Payment details are
-                  never stored directly by Town Wall.
-                </p>
-
-                <h4>6. Security & Recovery</h4>
-                <p>
-                  Passwords are cryptographically hashed. Forgotten credentials
-                  cannot be recovered without recovery codes. Loss of access
-                  may be permanent.
-                </p>
-
-                <h4>7. Service Provided As-Is</h4>
-                <p>
-                  The service is provided “as is” without guarantees of
-                  availability or reliability.
-                </p>
-
-                <h4>8. Limitation of Liability</h4>
-                <p>
-                  To the fullest extent permitted by law, the operator is not
-                  liable for indirect, incidental, or consequential damages.
-                </p>
-
-                <h4>9. Changes</h4>
-                <p>
-                  This policy may be updated. Continued use means acceptance of
-                  the revised terms.
-                </p>
 
                 <p className="footer">
                   Last updated: December 27, 2025
@@ -209,58 +249,96 @@ export default function TownWall() {
         </div>
       )}
 
-      {/* STYLES */}
+      {/* ================= STYLES ================= */}
       <style jsx>{`
         .hero {
           text-align: center;
-          margin-bottom: 28px;
+          margin-bottom: 42px;
+        }
+
+        .townwall-logo {
+          width: 90px;
+          margin-bottom: 14px;
         }
 
         .title {
-          font-size: 34px;
+          font-size: 38px;
           font-weight: 900;
         }
 
         .subtitle {
           opacity: 0.85;
-          margin-top: 6px;
+          margin-top: 10px;
         }
 
         .card {
-          margin-bottom: 20px;
-          padding: 18px 16px;
-          border-radius: 16px;
+          margin-bottom: 26px;
+          padding: 22px;
+          border-radius: 18px;
           border: 1px solid rgba(255,255,255,0.18);
-          background: rgba(10,10,22,0.28);
-          backdrop-filter: blur(10px);
+          background: rgba(10,10,22,0.32);
+          backdrop-filter: blur(12px);
         }
 
-        .card ul {
-          padding-left: 18px;
+        .feature-list {
+          list-style: none;
+          padding-left: 0;
           display: grid;
-          gap: 6px;
+          gap: 16px;
+        }
+
+        .feature-list li strong {
+          display: block;
+          font-weight: 700;
+        }
+
+        .feature-list li span {
+          font-size: 14px;
+          opacity: 0.85;
+        }
+
+        .screenshots {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+          gap: 16px;
+        }
+
+        .shot {
+          text-align: center;
+        }
+
+        .placeholder {
+          height: 170px;
+          border-radius: 14px;
+          border: 1px dashed rgba(255,255,255,0.35);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0.7;
+          margin-bottom: 8px;
         }
 
         .legal {
           display: flex;
           justify-content: center;
-          gap: 14px;
-          margin-top: 24px;
+          gap: 16px;
+          margin: 36px 0;
         }
 
-        .legal button {
-          padding: 10px 14px;
-          border-radius: 10px;
-          border: 1px solid rgba(255,255,255,0.22);
+        .legal button,
+        .close {
+          padding: 12px 16px;
+          border-radius: 12px;
+          border: none;
           background: rgba(124,58,237,0.9);
           color: white;
-          font-weight: 600;
+          font-weight: 700;
         }
 
         .modal-backdrop {
           position: fixed;
           inset: 0;
-          background: rgba(0,0,0,0.7);
+          background: rgba(0,0,0,0.75);
           display: flex;
           justify-content: center;
           align-items: center;
@@ -270,42 +348,18 @@ export default function TownWall() {
         .modal {
           max-height: 80vh;
           overflow-y: auto;
-          width: 90%;
+          width: 92%;
           max-width: 640px;
-          background: rgba(10,10,22,0.95);
-          border-radius: 16px;
-          padding: 20px;
+          background: rgba(10,10,22,0.96);
+          border-radius: 18px;
+          padding: 22px;
           border: 1px solid rgba(255,255,255,0.18);
         }
 
-        .modal h3 {
-          margin-top: 0;
-          font-weight: 800;
-        }
-
-        .modal h4 {
-          margin-top: 18px;
-        }
-
-        .modal ul {
-          padding-left: 18px;
-        }
-
         .footer {
-          margin-top: 20px;
+          margin-top: 18px;
           font-style: italic;
           opacity: 0.8;
-        }
-
-        .close {
-          margin-top: 20px;
-          width: 100%;
-          padding: 10px;
-          border-radius: 10px;
-          border: none;
-          background: rgba(124,58,237,0.9);
-          color: white;
-          font-weight: 700;
         }
       `}</style>
     </Layout>
