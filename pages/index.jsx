@@ -20,6 +20,15 @@ export default function TownWall() {
           A community platform built around real towns, real zones,
           and shared public spaces.
         </p>
+        <a
+  href="https://testflight.apple.com/join/pDXYmMhf"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="ios-beta-button"
+>
+  <span className="beta-badge">iOS BETA</span>
+  Try Town Wall on iPhone
+</a>
       </section>
 
       {/* ================= INTRO ================= */}
@@ -307,6 +316,45 @@ export default function TownWall() {
           opacity: 0.85;
           margin-top: 10px;
         }
+        .ios-beta-button {
+  margin-top: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 22px;
+  border-radius: 16px;
+  background: linear-gradient(
+    135deg,
+    rgba(124,58,237,1),
+    rgba(167,139,250,1)
+  );
+  color: white;
+  font-weight: 800;
+  font-size: 15px;
+  text-decoration: none;
+  box-shadow:
+    0 12px 30px rgba(124,58,237,0.45),
+    inset 0 0 0 1px rgba(255,255,255,0.18);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.ios-beta-button:hover {
+  transform: translateY(-2px);
+  box-shadow:
+    0 18px 42px rgba(124,58,237,0.6),
+    inset 0 0 0 1px rgba(255,255,255,0.22);
+}
+
+.beta-badge {
+  background: rgba(0,0,0,0.28);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 
         .card {
           margin-bottom: 26px;
